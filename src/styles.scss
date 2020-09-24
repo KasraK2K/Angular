@@ -5,7 +5,7 @@
 }
 
 nav.menu {
-  background-color: #110641;
+  background-color: #111C31;
 
   ul {
     list-style: none;
@@ -18,10 +18,11 @@ nav.menu {
 
       a {
         text-decoration: none;
+        padding: 17px 15px;
       }
 
       a.menu-Active {
-        border-bottom: 2px solid red;
+        border-bottom: 5px solid red;
       }
     }
   }
