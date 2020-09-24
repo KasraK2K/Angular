@@ -1,1 +1,52 @@
-/* You can add global styles to this file, and also import other style files */
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+nav.menu {
+  background-color: #110641;
+
+  ul {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    li {
+      padding: 20px 15px;
+
+      a {
+        text-decoration: none;
+      }
+
+      a.menu-Active {
+        border-bottom: 2px solid red;
+      }
+    }
+  }
+}
+
+.menu-item {
+  color: white;
+}
+
+.menu-Active {
+  color: red;
+}
+
+.container {
+  width: 1200px;
+  margin: auto;
+}
+
+.app {
+  margin: 50px auto;
+}
+
+.dynamic {
+  color: white;
+  text-shadow: 0 0 3px rgba(0, 0, 0, 1);
+  font-weight: bold;
+  font-size: 18px;
+}
