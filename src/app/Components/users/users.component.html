@@ -24,3 +24,11 @@
 </ng-container>
 
 <a [queryParams]="{ name: 'kaveh' }" routerLink="/users">add query param</a>
+
+<br />
+<hr />
+<br />
+
+<ng-container *ngIf="allUsers">
+  <app-menu [users-data]="allUsers"></app-menu>
+</ng-container>
