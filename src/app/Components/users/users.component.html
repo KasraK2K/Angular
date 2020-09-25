@@ -10,3 +10,17 @@
     <span class="dynamic">{{ user.mobile }}</span>
   </p>
 </ng-container>
+
+<ng-container *ngIf="userId">
+  <p>
+    user params: <span class="text-danger">{{ userId }}</span>
+  </p>
+</ng-container>
+
+<ng-container *ngIf="userQueryName">
+  <p>
+    query params: <span class="text-danger">{{ userQueryName }}</span>
+  </p>
+</ng-container>
+
+<a [queryParams]="{ name: 'kaveh' }" routerLink="/users">add query param</a>
