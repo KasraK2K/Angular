@@ -14,12 +14,19 @@ export class UsersComponent implements OnInit {
   }
 
   ngOnInit(): void {
-    if (!this.usersService.allUsers) {
+    if (!this.allUsers) {
       this.getAll();
     }
   }
 
-  getAll() {
-    this.usersService.getUsers();
+  getAll(): void {
+    this.usersService.getUsers().subscribe((response) => {
+      this.usersService.allUsers = response;
+      this.allUsers = response;
+    });
+  }
+
+  refresh(): void {
+    this.getAll();
   }
 }

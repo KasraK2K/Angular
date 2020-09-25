@@ -1,0 +1,39 @@
+{
+  "posts": [
+    {
+      "id": 1,
+      "title": "sample data",
+      "author": "kasra karami"
+    }
+  ],
+  "comments": [
+    {
+      "id": 1,
+      "body": "some comment",
+      "postId": 1
+    }
+  ],
+  "users": [
+    {
+      "id": 1,
+      "name": "john",
+      "email": "john@email.com",
+      "mobile": "+989123456789"
+    },
+    {
+      "id": 2,
+      "name": "tom",
+      "email": "tom@email.com",
+      "mobile": "+98987654321"
+    },
+    {
+      "id": 2,
+      "name": "jill",
+      "email": "jill@email.com",
+      "mobile": "+98543219876"
+    }
+  ],
+  "profile": {
+    "name": "kasra"
+  }
+}

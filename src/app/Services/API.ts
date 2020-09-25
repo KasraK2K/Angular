@@ -1,4 +1,4 @@
-export const BAKEND_URL = 'http://jsonplaceholder.typicode.com';
+export const BAKEND_URL = 'http://localhost:3000';
 
 export const API = {
   users: {

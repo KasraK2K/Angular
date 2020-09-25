@@ -1,5 +1,12 @@
 <h1>All Users:</h1>
 
+<button (click)="refresh()" class="btn btn-success mb-3">refresh</button>
+
 <ng-container *ngFor="let user of allUsers">
-  <p>hi</p>
+  <p>
+    id: <span class="dynamic">{{ user.id }}</span> name:
+    <span class="dynamic">{{ user.name }}</span> username:
+    <span class="dynamic">{{ user.email }}</span> mobile:
+    <span class="dynamic">{{ user.mobile }}</span>
+  </p>
 </ng-container>

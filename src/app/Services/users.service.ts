@@ -14,7 +14,7 @@ export class UsersService extends CRUDSService {
     super(API.users.get, http);
   }
 
-  getUsers() {
-    return this.getData().subscribe((response) => (this.allUsers = response));
+  getUsers(): Observable<Object> {
+    return this.getData();
   }
 }
